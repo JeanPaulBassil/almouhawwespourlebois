@@ -21,19 +21,23 @@ export default function Header() {
 //   const menuItems = ['Home', 'Our Services', 'Our Clients', 'About Us']
 const menuItems = [{
     name: 'Home',
-    icon: <Home />
+    icon: <Home />,
+    href: '/'
   },
   {
-    name: 'Gallery',
-    icon: <Images />
+    name: 'Products',
+    icon: <Images />,
+    href: '/products'
   },
   {
     name: 'Contact Us',
-    icon: <Phone />
+    icon: <Phone />,
+    href: '/contact'
   },
   {
     name: 'About Us',
-    icon: <Info />
+    icon: <Info />,
+    href: '/about-us'
 }]
 
   const handleItemClick = (item: string) => {
@@ -92,7 +96,7 @@ const menuItems = [{
             isActive={activeItem === item.name}
           >
             <Link
-              href="#"
+              href={item.href}
               className={`font-bold text-black`}
               onClick={() => handleItemClick(item.name)}
             >
@@ -106,7 +110,7 @@ const menuItems = [{
       }}>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link color="foreground" className="w-full  flex items-center gap-2" href="#" size="lg">
+            <Link color="foreground" className="w-full  flex items-center gap-2" href={item.href} size="lg">
                 {item.icon}
               <p>{item.name}</p>
             </Link>
