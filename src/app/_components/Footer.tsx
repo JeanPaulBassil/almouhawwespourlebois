@@ -6,7 +6,7 @@ import BlurFade from './magic-ui/BlurFade'
 
 export default function Footer() {
   return (
-    <div className="flex w-full items-center justify-between bg-[#F1DED0] px-20 py-8 mt-10">
+    <div className="flex w-full items-center flex-col lg:flex-row justify-between bg-[#F1DED0] px-20 py-8 mt-10">
         <BlurFade inView delay={0.5}>
         <Image src="/logo.png" alt="logo" width={100} height={100} />
       </BlurFade>
