@@ -30,18 +30,17 @@ export default function Header() {
     {
       name: 'Home',
       icon: <Home />,
+      href: '/',
     },
     {
       name: 'Products',
       icon: <Images />,
-    },
-    {
-      name: 'Contact Us',
-      icon: <Phone />,
+      href: '/products',
     },
     {
       name: 'About Us',
       icon: <Info />,
+      href: '/about-us',
     },
   ]
 
@@ -105,7 +104,7 @@ export default function Header() {
           <BlurFade inView delay={0.2 + index * 0.2}>
             <NavbarItem key={`${item}-${index}`} isActive={activeItem === item.name}>
               <Link
-                href="#"
+                href={item.href}
                 className={`text-black font-bold`}
                 onClick={() => handleItemClick(item.name)}
               >
@@ -127,7 +126,7 @@ export default function Header() {
               <Link
                 color="foreground"
                 className="flex w-full items-center gap-2"
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.icon}
