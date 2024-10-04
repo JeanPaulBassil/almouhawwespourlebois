@@ -22,7 +22,8 @@ const places: PlaceItem[] = [
     rating: 4.84,
     href: '#',
     price: 29.99,
-    description: 'Rich, dark wood known for its durability and warp resistance. Ideal for fine furniture and cabinetry.',
+    description:
+      'Rich, dark wood known for its durability and warp resistance. Ideal for fine furniture and cabinetry.',
     imageSrc: '/products/American-Black-Walnut.png',
   },
   {
@@ -31,7 +32,8 @@ const places: PlaceItem[] = [
     rating: 3.94,
     href: '#',
     price: 39.99,
-    description: 'Light beige wood with versatile properties, used globally in veneer, flooring, and musical instruments.',
+    description:
+      'Light beige wood with versatile properties, used globally in veneer, flooring, and musical instruments.',
     imageSrc: '/products/Beech-Wood.jpg',
   },
   {
@@ -40,7 +42,8 @@ const places: PlaceItem[] = [
     rating: 4.2,
     href: '#',
     price: 49.99,
-    description: 'Pale yellow to white wood, excellent for home construction and paneling, easy to nail and paint.',
+    description:
+      'Pale yellow to white wood, excellent for home construction and paneling, easy to nail and paint.',
     imageSrc: '/products/White-Wood.png',
   },
   {
@@ -49,7 +52,8 @@ const places: PlaceItem[] = [
     rating: 3.5,
     href: '#',
     price: 29.99,
-    description: 'Soft or semi-hard, easy to work with for roofing and furniture. Great for carpentry and interior designs.',
+    description:
+      'Soft or semi-hard, easy to work with for roofing and furniture. Great for carpentry and interior designs.',
     imageSrc: '/products/Swedish-Wood.jpg',
   },
   {
@@ -58,7 +62,8 @@ const places: PlaceItem[] = [
     rating: 4.9,
     href: '#',
     price: 39.99,
-    description: 'Tropical hardwood with unique grains, suited for high-end furniture and decorative panels.',
+    description:
+      'Tropical hardwood with unique grains, suited for high-end furniture and decorative panels.',
     imageSrc: '/products/Fraké-Wood.png',
   },
   {
@@ -67,7 +72,8 @@ const places: PlaceItem[] = [
     rating: 4.5,
     href: '#',
     price: 49.99,
-    description: 'Smooth, knot-free synthetic wood. Perfect for furniture and cabinetry needing a clean finish.',
+    description:
+      'Smooth, knot-free synthetic wood. Perfect for furniture and cabinetry needing a clean finish.',
     imageSrc: '/products/Medium-Density-Fiberboard.png',
   },
   {
@@ -103,7 +109,8 @@ const places: PlaceItem[] = [
     rating: 3.5,
     href: '#',
     price: 29.99,
-    description: 'Compressed wood fibers offering strength and smoothness for construction and furniture back panels.',
+    description:
+      'Compressed wood fibers offering strength and smoothness for construction and furniture back panels.',
     imageSrc: '/products/Masonite.jpg',
   },
   {
@@ -112,7 +119,8 @@ const places: PlaceItem[] = [
     rating: 4.9,
     href: '#',
     price: 39.99,
-    description: 'Engineered wood that resists warping, used in furniture and construction for its lightweight and durability.',
+    description:
+      'Engineered wood that resists warping, used in furniture and construction for its lightweight and durability.',
     imageSrc: '/products/Block-Board.png',
   },
   {
@@ -130,17 +138,17 @@ const places: PlaceItem[] = [
     rating: 4.84,
     href: '#',
     price: 29.99,
-    description: 'Cross-grain structure reduces expansion and splitting, high strength for construction and furniture.',
+    description:
+      'Cross-grain structure reduces expansion and splitting, high strength for construction and furniture.',
     imageSrc: '/products/Plywood.png',
   },
 ]
 
-export default function page({ className }: { className?: string }) {
+export default function page() {
   return (
     <div
       className={cn(
-        'my-auto grid w-screen grid-cols-1 gap-5 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5',
-        className
+        'my-auto grid w-screen grid-cols-1 gap-5 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'
       )}
     >
       {places.map((place, index) => (
