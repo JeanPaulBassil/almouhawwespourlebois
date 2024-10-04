@@ -14,7 +14,7 @@ const places: PlaceItem[] = [
     price: 49.99,
     description:
       'Tropical African wood, initially yellow-brown, darkening with age. Durable and rot-resistant, ideal for outdoor applications, cabinetry, and furniture.',
-    imageSrc: '/products/iroko.png',
+    imageSrc: '/products/iroko.jpg',
   },
   {
     id: '2',
@@ -50,7 +50,7 @@ const places: PlaceItem[] = [
     href: '#',
     price: 29.99,
     description: 'Soft or semi-hard, easy to work with for roofing and furniture. Great for carpentry and interior designs.',
-    imageSrc: '/products/Swedish-Wood.png',
+    imageSrc: '/products/Swedish-Wood.jpg',
   },
   {
     id: '6',
