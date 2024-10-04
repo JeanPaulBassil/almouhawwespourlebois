@@ -74,12 +74,6 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
             <>
               <div className="flex items-start justify-between gap-1">
                 <h3 className="text-small font-medium text-default-700">{name}</h3>
-                {rating !== undefined ? (
-                  <div className="flex items-center gap-1">
-                    <Star size={16} fill="yellow" color="grey"/>
-                    <span className="text-small text-default-500">{rating}</span>
-                  </div>
-                ) : null}
               </div>
               {description ? <p className="text-small text-default-500">{description}</p> : null}
             </>
