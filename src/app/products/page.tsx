@@ -14,7 +14,7 @@ const places: PlaceItem[] = [
     price: 49.99,
     description:
       'Tropical African wood, initially yellow-brown, darkening with age. Durable and rot-resistant, ideal for outdoor applications, cabinetry, and furniture.',
-    imageSrc: '/products/iroko.jpg',
+    imageSrc: '/products/irokoWood.jpg',
   },
   {
     id: '2',
