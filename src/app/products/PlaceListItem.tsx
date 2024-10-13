@@ -1,50 +1,51 @@
-"use client";
+'use client'
 
-import React from "react";
-import {Button, Image, Skeleton} from "@nextui-org/react";
-import { cn } from "@/lib/utils";
-import { Icon, Star } from "lucide-react";
-
+import React from 'react'
+import { Button, Chip, Image, Skeleton } from '@nextui-org/react'
+import { cn } from '@/lib/utils'
+import { Icon, Star } from 'lucide-react'
 
 export type PlaceListItemColor = {
-  name: string;
-  hex: string;
-};
+  name: string
+  hex: string
+}
 
 export type PlaceItem = {
-  id: string;
-  name: string;
-  href: string;
-  price: number;
-  isNew?: boolean;
-  rating?: number;
-  ratingCount?: number;
-  description?: string;
-  imageSrc: string;
-};
+  id: string
+  name: string
+  href: string
+  price: number
+  isNew?: boolean
+  rating?: number
+  ratingCount?: number
+  description?: string
+  imageSrc: string
+  tag?: string
+  size?: string
+}
 
-export type PlaceListItemProps = Omit<React.HTMLAttributes<HTMLDivElement>, "id"> & {
-  isPopular?: boolean;
-  isLoading?: boolean;
-  removeWrapper?: boolean;
-} & PlaceItem;
+export type PlaceListItemProps = Omit<React.HTMLAttributes<HTMLDivElement>, 'id'> & {
+  isPopular?: boolean
+  isLoading?: boolean
+  removeWrapper?: boolean
+} & PlaceItem
 
 const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
   (
-    {name, price, rating, isLoading, description, imageSrc, removeWrapper, className, ...props},
-    ref,
+    { name, price, rating, isLoading, description, imageSrc, removeWrapper, tag, size, className, ...props },
+    ref
   ) => {
-    const [isLiked, setIsLiked] = React.useState(false);
+    const [isLiked, setIsLiked] = React.useState(false)
 
     return (
       <div
         ref={ref}
         className={cn(
-          "relative flex w-full flex-none flex-col gap-3",
+          'relative flex w-full flex-none flex-col gap-3',
           {
-            "rounded-none bg-background shadow-none": removeWrapper,
+            'rounded-none bg-background shadow-none': removeWrapper,
           },
-          className,
+          className
         )}
         {...props}
       >
@@ -54,7 +55,7 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
           alt={name}
           className="aspect-square h-72 w-full hover:scale-110"
           isLoading={isLoading}
-          src={imageSrc ? imageSrc : "placeholder.webp"}
+          src={imageSrc ? imageSrc : 'placeholder.webp'}
         />
 
         <div className="mt-1 flex flex-col gap-2 px-1">
@@ -74,16 +75,18 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
             <>
               <div className="flex items-start justify-between gap-1">
                 <h3 className="text-small font-medium text-default-700">{name}</h3>
+                {tag ? <Chip color="primary" size='sm'>{tag}</Chip> : null}
               </div>
               {description ? <p className="text-small text-default-500">{description}</p> : null}
+              {size ? <p className="text-small text-default-500">{size}</p> : null}
             </>
           )}
         </div>
       </div>
-    );
-  },
-);
+    )
+  }
+)
 
-PlaceListItem.displayName = "PlaceListItem";
+PlaceListItem.displayName = 'PlaceListItem'
 
-export default PlaceListItem;
+export default PlaceListItem

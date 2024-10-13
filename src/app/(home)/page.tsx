@@ -92,30 +92,30 @@ const page = () => {
       <div className="flex flex-col items-center gap-10 md:items-start">
         <BlurFade inView={true} className="flex w-full justify-center lg:justify-start">
           <div
-            style={{ backgroundImage: "url('woodWeWorkWith/1.png')" }}
+            style={{ backgroundImage: "url('products/American-Black-Walnut.png')" }}
             className="flex h-auto w-auto flex-col items-center gap-4 rounded-xl px-10 pb-10 shadow-xl md:h-[150px] md:w-[100%] md:flex-row md:px-0 md:pb-0 lg:h-[220px] lg:w-[80%] lg:gap-10 xl:w-[1026px]"
           >
             <BlurFade inView={true}>
               <div className="flex w-full items-center justify-center rounded-md bg-[#ffffff] px-7 py-2 xs:w-auto lg:px-16 lg:py-5">
-                <p className="text-base font-bold md:text-lg lg:text-xl">Oak</p>
+                <p className="text-base font-bold md:text-lg lg:text-xl">American Black Walnut</p>
               </div>
             </BlurFade>
             <div className="flex w-full flex-col justify-center gap-2 xs:flex-row md:gap-10 lg:gap-20">
               <div className="flex w-full flex-col justify-between gap-2 px-2 md:flex-row md:gap-0 lg:px-10">
                 <div className="flex items-center gap-2">
                   <Check color="#79BF33" size={isLgScreen ? 35 : 25} />
-                  <p className="text-base text-[#ffffff] lg:text-xl">Waterproof</p>
+                  <p className="text-base text-[#ffffff] lg:text-xl">Durable</p>
                 </div>
                 <BlurFade inView={true} delay={0.4}>
                   <div className="flex items-center gap-2">
                     <Check color="#79BF33" size={isLgScreen ? 35 : 25} />
-                    <p className="text-base text-[#ffffff] lg:text-xl">Durability</p>
+                    <p className="text-base text-[#ffffff] lg:text-xl">Dense</p>
                   </div>
                 </BlurFade>
                 <BlurFade inView={true} delay={0.6}>
                   <div className="flex items-center gap-2">
                     <Check color="#79BF33" size={isLgScreen ? 35 : 25} />
-                    <p className="text-base text-[#ffffff] lg:text-xl">Elegant</p>
+                    <p className="text-base text-[#ffffff] lg:text-xl">Rich</p>
                   </div>
                 </BlurFade>
               </div>
@@ -124,12 +124,12 @@ const page = () => {
         </BlurFade>
         <BlurFade delay={0.2} inView className="flex w-full justify-center lg:justify-start">
           <div
-            style={{ backgroundImage: "url('woodWeWorkWith/2.png')" }}
+            style={{ backgroundImage: "url('products/irokoWood.png')" }}
             className="flex h-auto w-auto flex-col items-center gap-4 rounded-xl px-12 pb-10 shadow-xl md:h-[150px] md:w-[100%] md:flex-row md:px-0 md:pb-0 lg:h-[220px] lg:w-[80%] lg:gap-10 xl:w-[1026px]"
           >
             <BlurFade>
               <div className="flex w-full items-center justify-center rounded-md bg-[#825843] bg-opacity-50 px-7 py-2 xs:w-auto lg:px-16 lg:py-5">
-                <p className="text-base font-bold text-[#ffffff] md:text-lg lg:text-xl">Buk</p>
+                <p className="text-base font-bold text-[#ffffff] md:text-lg lg:text-xl">Iroko</p>
               </div>
             </BlurFade>
             <div className="flex w-full flex-col justify-center gap-2 px-2 xs:flex-row md:gap-10 lg:gap-20">
@@ -137,13 +137,13 @@ const page = () => {
                 <BlurFade inView={true} delay={0.2}>
                   <div className="flex items-center gap-2">
                     <Check color="#79BF33" size={isLgScreen ? 35 : 25} />
-                    <p className="text-base text-[#000000] lg:text-xl">Density</p>
+                    <p className="text-base text-[#000000] lg:text-xl">Resilient</p>
                   </div>
                 </BlurFade>
                 <BlurFade inView={true} delay={0.4}>
                   <div className="flex items-center gap-2">
                     <Check color="#79BF33" size={isLgScreen ? 35 : 25} />
-                    <p className="text-base text-[#000000] lg:text-xl">Grain</p>
+                    <p className="text-base text-[#000000] lg:text-xl">Sturdy</p>
                   </div>
                 </BlurFade>
                 <BlurFade inView={true} delay={0.6}>
@@ -158,12 +158,12 @@ const page = () => {
         </BlurFade>
         <BlurFade delay={0.4} inView className="flex w-full justify-center lg:justify-start">
           <div
-            style={{ backgroundImage: "url('woodWeWorkWith/3.png')" }}
+            style={{ backgroundImage: "url('products/beech-wallpaper.png')" }}
             className="flex h-auto w-auto flex-col items-center gap-4 rounded-xl px-10 pb-10 shadow-xl md:h-[150px] md:w-[100%] md:flex-row md:gap-0 md:px-0 md:pb-0 lg:h-[210px] lg:w-[80%] lg:gap-10 xl:w-[1026px]"
           >
             <BlurFade>
               <div className="flex w-full items-center justify-center rounded-md bg-[#825843] bg-opacity-50 px-7 py-2 xs:w-auto lg:px-16 lg:py-5">
-                <p className="text-base font-bold text-[#ffffff] md:text-lg lg:text-xl">Ash</p>
+                <p className="text-base font-bold text-[#ffffff] md:text-lg lg:text-xl">Beech</p>
               </div>
             </BlurFade>
             <div className="flex w-full flex-col justify-center gap-2 px-2 xs:flex-row md:gap-10 lg:gap-20">
@@ -171,19 +171,19 @@ const page = () => {
                 <BlurFade inView={true} delay={0.2}>
                   <div className="flex items-center gap-2">
                     <Check color="#79BF33" size={isLgScreen ? 35 : 25} />
-                    <p className="text-base text-[#000000] lg:text-xl">Strength</p>
+                    <p className="text-base text-[#000000] lg:text-xl">Strong</p>
                   </div>
                 </BlurFade>
                 <BlurFade inView={true} delay={0.4}>
                   <div className="flex items-center gap-2">
                     <Check color="#79BF33" size={isLgScreen ? 35 : 25} />
-                    <p className="text-base text-[#000000] lg:text-xl">Grain</p>
+                    <p className="text-base text-[#000000] lg:text-xl">Uniform</p>
                   </div>
                 </BlurFade>
                 <BlurFade inView={true} delay={0.6}>
                   <div className="flex items-center gap-2">
                     <Check color="#79BF33" size={isLgScreen ? 35 : 25} />
-                    <p className="text-base text-[#000000] lg:text-xl">Workability</p>
+                    <p className="text-base text-[#000000] lg:text-xl">Workable</p>
                   </div>
                 </BlurFade>
               </div>
