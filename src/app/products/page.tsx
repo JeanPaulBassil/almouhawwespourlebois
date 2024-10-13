@@ -172,7 +172,7 @@ export default function page() {
   return (
     <div
       className={cn(
-        'my-auto grid w-screen grid-cols-1 gap-5 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'
+        'my-auto grid w-screen grid-cols-1 gap-5 p-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5'
       )}
     >
       {places.map((place, index) => (

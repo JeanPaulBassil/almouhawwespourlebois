@@ -53,11 +53,10 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
           isBlurred
           isZoomed
           alt={name}
-          className="aspect-square h-72 w-full hover:scale-110"
+          className="aspect-square w-full hover:scale-110"
           isLoading={isLoading}
           src={imageSrc ? imageSrc : 'placeholder.webp'}
         />
-
         <div className="mt-1 flex flex-col gap-2 px-1">
           {isLoading ? (
             <div className="my-1 flex flex-col gap-3">
