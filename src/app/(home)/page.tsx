@@ -39,7 +39,7 @@ const page = () => {
                   </span>
                   <BlurFade delay={0.2}>
                     <span className="text-base lg:text-lg xl:text-xl">
-                      Oak, beech, ash <br /> and much more
+                      Walnut, Iroko, Beech <br /> and much more
                     </span>
                   </BlurFade>
                   <BlurFade delay={0.4}>
@@ -97,7 +97,7 @@ const page = () => {
           >
             <BlurFade inView={true}>
               <div className="flex w-full items-center justify-center rounded-md bg-[#ffffff] px-7 py-2 xs:w-auto lg:px-16 lg:py-5">
-                <p className="text-base font-bold md:text-lg lg:text-xl">American Black Walnut</p>
+                <p className="text-base font-bold md:text-lg lg:text-xl">Walnut</p>
               </div>
             </BlurFade>
             <div className="flex w-full flex-col justify-center gap-2 xs:flex-row md:gap-10 lg:gap-20">
