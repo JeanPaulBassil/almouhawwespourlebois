@@ -152,7 +152,7 @@ const places: PlaceItem[] = [
     href: '#',
     price: 49.99,
     description: 'A type of manufactured wood panel made from sawdust and wood scraps that are mixed with resin, compressed, and fired into solid boards. It features a smooth, uniform surface without voids, splinters, or cracks, making it ideal for painting and edge work. Its consistency allows for easy routing to create a variety of smooth edge profiles.',
-    imageSrc: '/products/Okal.jpg',
+    imageSrc: '/products/Okal.png',
     size: 'Available in the following dimensions: \nLength: 2440mm, 3660mm \nWidth: 1220mm, 183mm \nThicknesses: 18mm',
   },
   {
