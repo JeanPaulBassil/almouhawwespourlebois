@@ -166,6 +166,16 @@ const places: PlaceItem[] = [
     imageSrc: '/products/Plywood.png',
     size: 'Available thickness: 4mm, 6mm, 8mm, 12mm, 15mm, 18mm',
   },
+  {
+    id: '15',
+    name: 'Melamine faced panels',
+    rating: 4.2,
+    href: '#',
+    price: 49.99,
+    description: 'Melamine-faced panels are a versatile and durable solution for various applications, offering a sleek, scratch-resistant surface in a wide selection of colors, textures, and finishes. These panels are also available in moisture-resistant options, making them particularly suitable for environments with high humidity or exposure to moisture, such as kitchens, bathrooms, and laundry areas. The moisture resistance enhances their longevity and performance, ensuring a reliable and attractive finish in demanding conditions',
+    imageSrc: '/products/Melamine-faced-panels.png',
+    size: 'Available in the following dimensions: \nLength: 2800mm, 3660mm \nWidth: 2070mm, 183mm \nThicknesses: 18mm',
+  }
 ]
 
 export default function page() {
