@@ -19,10 +19,17 @@ const page = (props: Props) => {
             </span>
             <BlurFade inView delay={0.5}>
               <p className="max-w-[300px] text-sm md:text-base lg:max-w-[350px] lg:text-lg xl:max-w-[470px] xl:text-2xl">
-                Al Mouhawess Wood - We specialize in crafting high-quality wood products tailored to
-                your specifications. From custom furniture like chairs, tables, and wardrobes to
-                unique architectural elements, our workshop is equipped with state-of-the-art
-                industrial equipment to bring your visions to life.
+                Welcome to Al Mouhawess Wood, a distinguished name in the wood industry renowned for
+                our unwavering commitment to honesty, integrity, and excellence. Founded in 1983 by
+                Iskandar Al Mouhawess, our journey began as a modest wood shop in the historic souks
+                of Batroun. Through Iskandar’s dedication to superior quality and exceptional
+                service, we have built a legacy of trust and loyalty with our customers. In 2011, In
+                2011, Iskandar's son, Farjallah Al Mouhawess, took control and expanded the
+                business, transforming it into the esteemed company it is today. Customer
+                satisfaction is foremost in our approach. We pride ourselves on fostering enduring
+                relationships with our clients, offering personalized service and dependable
+                solutions. Whether you are involved in construction, manufacturing, or any industry
+                requiring high-quality wood materials, Al Mouhawess Wood is your trusted partner.
               </p>
             </BlurFade>
           </ShineBorder>
